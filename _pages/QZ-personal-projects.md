@@ -5,6 +5,17 @@ permalink: /personal-projects/
 author_profile: true
 ---
 
+## Reinforcement Learning for Unitree Go2 Locomotion in Isaac Lab
+
+<div style="display: flex; gap: 1rem; align-items: flex-start; flex-wrap: wrap; margin: 1rem 0;">
+  <img src="/images/QZ_RL_go2_model_100.gif" alt="Unitree Go2 reinforcement learning policy after 100 training iterations" style="width: calc(50% - 0.5rem); min-width: 260px; height: auto;">
+  <img src="/images/QZ_RL_go2_model_499.gif" alt="Unitree Go2 reinforcement learning policy after 500 training iterations" style="width: calc(50% - 0.5rem); min-width: 260px; height: auto;">
+</div>
+
+This project is my first hands-on experiment with reinforcement learning. To learn by doing, I tried to reproduce part of the method from an ICRA 2025 paper on adaptive energy regularization for quadruped locomotion. The goal is to train a Unitree Go2 robot in Isaac Lab to follow randomized velocity commands. Since I only had access to my laptop GPU, I trained the policy for 500 iterations, but the results were already encouraging. In the video on the left, after 100 iterations, the robot barely moves. In the video on the right, after 500 iterations, the robot can smoothly follow the randomized velocity commands.
+
+Tools: **Isaac Lab, reinforcement learning, Unitree Go2, quadruped locomotion, Python**.
+
 ## Isaac Sim - xArm7 + LEAP Hand Contact-Aware Grasping Simulation
 
 <div style="position: relative; width: 70%; max-width: 600px; aspect-ratio: 16 / 9; margin: 1rem 0;">
