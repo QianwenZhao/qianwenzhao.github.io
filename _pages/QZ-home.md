@@ -50,13 +50,17 @@ I am based in Hoboken, New Jersey, and study at Stevens Institute of Technology.
 
 Programming: Python, C/C++, MATLAB
 
-Robotics Software: ROS, MuJoCo, Isaac Sim, Gazebo, Docker, OpenSim
+Robotics Software: ROS, MuJoCo, Isaac Sim, Isaac Lab, Newton Physics, Gazebo, Docker, OpenSim
 
 Robotics Hardware: Mechatronics, Arduino, PX4 Flight Controller, Force/Torque Sensors, Intel RealSense RGB-D Camera, Elmo Servo Drives
 
-Robot Manipulator Platform: Univeral Robots, Kinova, X-ARM, KUKA  
+Robot Manipulator Platform: Univeral Robots, Kinova, X-ARM, KUKA, Franka Panda / FR3  
 
 Computer Vision: OpenPose, human pose estimation, 3D pose reconstruction, RGB-D perception, multi-view camera calibration
+
+Robot Learning: Vision-Language-Action policies, LeRobot, SmolVLA, behavior cloning, domain randomization, imitation learning
+
+Simulation and Modeling: Soft-body simulation, deformable-object grasping, MJCF, URDF, inverse kinematics
 
 3D Modeling: SolidWorks, AutoCAD, 3D printing
 

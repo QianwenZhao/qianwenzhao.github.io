@@ -5,6 +5,30 @@ permalink: /personal-projects/
 author_profile: true
 ---
 
+## Soft-Body Robotic Grasping Simulation with Franka FR3 and Custom Hand in Newton Physics
+
+<div style="position: relative; width: 70%; max-width: 600px; aspect-ratio: 16 / 9; margin: 1rem 0;">
+  <iframe src="https://www.youtube.com/embed/Rnt0spb0aDg" title="Soft-body robotic grasping simulation with Franka FR3 and custom hand in Newton Physics" style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+This project builds a Newton Physics simulation for deformable-object grasping using a Franka FR3 arm and a custom multi-finger hand. I integrated custom MJCF hand assets with a Franka URDF model, added convex-hull collision geometry, and set up IK-driven control for coordinated arm-hand motion.
+
+The simulation uses VBD soft-body dynamics to model a deformable rubber duck during grasping and lifting. This setup provides a testbed for studying contact-rich manipulation with custom robotic hands, deformable objects, and physics-based grasp execution before moving toward hardware experiments.
+
+Tools: **Newton Physics, Franka FR3, custom hand, MJCF, URDF, IK control, VBD soft-body simulation, deformable-object grasping**.
+
+## Vision-Language-Action Fine-Tuning Pipeline for Franka Pick-and-Place
+
+<div style="display: flex; gap: 1rem; align-items: flex-start; flex-wrap: wrap; margin: 1rem 0;">
+  <img src="/images/QZ-VLA-franka-pick-place.gif" alt="Franka Panda pick-and-place rollout for Vision-Language-Action policy fine-tuning" style="max-width: 55%; min-width: 260px; height: auto;">
+</div>
+
+This project builds an end-to-end simulation-to-training pipeline for fine-tuning a Vision-Language-Action policy on a Franka Panda cube pick-and-place task. I created a custom Isaac Lab environment with IK-relative Franka control, a target bin, a table-mounted RealSense-style RGB camera, and task success metrics for evaluating closed-loop policy behavior.
+
+To generate training data, I built a scripted expert policy for demonstration collection and added domain randomization across object poses, lighting, camera perturbations, physics parameters, and action latency. The collected demonstrations include synchronized camera images, robot state, actions, language instructions, and success labels. I then converted the data into the LeRobot dataset format, trained baseline behavior-cloning models, fine-tuned SmolVLA, and evaluated the learned policies through closed-loop Isaac Lab rollouts.
+
+Tools: **Isaac Lab, Franka Panda, Vision-Language-Action policies, LeRobot, SmolVLA, behavior cloning, domain randomization, Python**.
+
 ## Reinforcement Learning for Unitree Go2 Locomotion in Isaac Lab
 
 <div style="display: flex; gap: 1rem; align-items: flex-start; flex-wrap: wrap; margin: 1rem 0;">
