@@ -5,6 +5,16 @@ permalink: /personal-projects/
 author_profile: true
 ---
 
+## Hybrid Force/Motion Control for Robotic Table Wiping
+
+<div style="display: flex; gap: 1rem; align-items: flex-start; flex-wrap: wrap; margin: 1rem 0;">
+  <img src="/images/QZ_newton-franka-hybrid-cube.gif" alt="Franka FR3 performing hybrid force and motion controlled table wiping in Newton Physics" style="max-width: 70%; min-width: 260px; height: auto;">
+</div>
+
+Simulated a Franka FR3 arm performing a pick-and-wipe task in NVIDIA's Newton physics engine: the arm grasps a cube with its parallel gripper, then wipes a table using hybrid force/motion control — regulating contact force along the surface normal (z) via a PI force loop while tracking a lawnmower motion path in the tangent plane (x/y), all mapped to joint torques through the manipulator Jacobian. Built a virtual 6-axis wrist force/torque sensor from the simulator's contact data to close the force loop and provide real-time sensing feedback, mirroring how a physical F/T sensor would be used on hardware. Demonstrates core manipulation-control concepts — task-space impedance control, force/position selection matrices, and grasp-stable contact-rich manipulation.
+
+Tools: **Newton Physics, Franka FR3, hybrid force/motion control, task-space impedance control, force/torque sensing, Python**.
+
 ## Soft-Body Robotic Grasping Simulation with Franka FR3 and Custom Hand in Newton Physics
 
 <div style="position: relative; width: 70%; max-width: 600px; aspect-ratio: 16 / 9; margin: 1rem 0;">
